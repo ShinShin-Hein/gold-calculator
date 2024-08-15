@@ -1,0 +1,40 @@
+let grandInputTag = document.getElementById("grandInput");
+let salePriceInputTag = document.getElementById("salePriceInput");
+let currentPriceInputTag = document.getElementById("currentPriceInput");
+let calBtnTag = document.getElementById("calBtn");
+
+//result Tag
+let itemBoldOneTag = document.getElementById("itemBoldOne");
+let itemBoldTwoTag = document.getElementById("itemBoldTwo");
+let itemBoldThreeTag = document.getElementById("itemBoldThree");
+
+
+
+calBtnTag.addEventListener("click", function () {
+    let grandInputValue = grandInputTag.value;
+    let salePriceInputValue = salePriceInputTag.value;
+    let currentPriceInputValue = currentPriceInputTag.value;
+
+    //condition
+    // if (!inputOneTag.value || !inputTwoTag.value || !inputThreeTag.value) {
+    //     alert("hasn't");
+    // } else {
+    //     alert("ok");
+    // }
+
+    let gramToPaeValue = eval(grandInputValue / 1.0205);
+
+    let paeToKyatTharr = eval(gramToPaeValue / 16);
+
+    let goldPrice = eval(paeToKyatTharr * currentPriceInputValue);
+
+    let handPrice = eval(salePriceInputValue - goldPrice);
+
+    //result
+    itemBoldOneTag.textContent = gramToPaeValue.toFixed(2);
+    itemBoldTwoTag.textContent = goldPrice.toFixed(2);
+    itemBoldThreeTag.textContent = handPrice.toFixed(2);
+
+
+
+})

@@ -1,0 +1,125 @@
+/* global style start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(236, 240, 255, 0.849);
+}
+
+/* global style end */
+.container {
+    width: 40%;
+    background-color: rgba(222, 232, 246, 0.999);
+    margin: 15px auto;
+    height: 586px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #babecc,
+        -10px -10px 20px #ffffff;
+}
+
+.mainTitle {
+    margin: 25px 0;
+}
+
+form {
+    /* background-color: pink; */
+    width: 85%;
+}
+
+/* #goldWeightContainer {
+    background-color: aqua;
+} */
+
+.titleOne,
+.titleTwo,
+.titleThree {
+    font-weight: 100;
+}
+
+#grandInput,
+#salePriceInput,
+#currentPriceInput {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(222, 232, 246, 0.999);
+    box-shadow: 0 0 5px rgb(185, 184, 184);
+    margin-top: 12px;
+    margin-bottom: 13px;
+}
+
+/* #btnContainer {
+    background-color: pink;
+} */
+
+#btnContainer input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: green;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0px;
+    font-weight: 200;
+    color: white;
+}
+
+#result {
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 25px;
+}
+
+#resultItemContainer {
+    /* background-color: aqua; */
+    width: 85%;
+}
+
+#resultItemContainer p b {
+    margin: 0px 5px;
+}
+
+#itemOne,
+#itemTwo,
+#itemThree {
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+
+.pTagContainer {
+    display: flex;
+}
+
+
+
+/* media query */
+@media(max-width: 1000px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 460px) {
+    .container {
+        width: 85%;
+        box-shadow: 8px 8px 10px #babecc,
+            -8px -8px 10px #ffffff;
+    }
+
+}
