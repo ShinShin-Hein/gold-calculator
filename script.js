@@ -8,19 +8,10 @@ let itemBoldOneTag = document.getElementById("itemBoldOne");
 let itemBoldTwoTag = document.getElementById("itemBoldTwo");
 let itemBoldThreeTag = document.getElementById("itemBoldThree");
 
-
-
 calBtnTag.addEventListener("click", function () {
     let gramInputTagValue = gramInputTag.value;
     let salePriceInputValue = salePriceInputTag.value;
     let currentPriceInputValue = currentPriceInputTag.value;
-
-    //condition
-    // if (!inputOneTag.value || !inputTwoTag.value || !inputThreeTag.value) {
-    //     alert("hasn't");
-    // } else {
-    //     alert("ok");
-    // }
 
     let gramToPaeValue = eval(gramInputTagValue / 1.0205);
 
