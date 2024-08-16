@@ -13,18 +13,25 @@ calBtnTag.addEventListener("click", function () {
     let salePriceInputValue = salePriceInputTag.value;
     let currentPriceInputValue = currentPriceInputTag.value;
 
-    let gramToPaeValue = eval(gramInputTagValue / 1.0205);
+    if (gramInputTagValue === "" || salePriceInputValue === "", currentPriceInputValue === "") {
+        alert("Please enter valid numbers in all fields");
+    } else {
+        let gramToPaeValue = eval(gramInputTagValue / 1.0205);
 
-    let paeToKyatTharr = eval(gramToPaeValue / 16);
+        let paeToKyatTharr = eval(gramToPaeValue / 16);
 
-    let goldPrice = eval(paeToKyatTharr * currentPriceInputValue);
+        let goldPrice = eval(paeToKyatTharr * currentPriceInputValue);
 
-    let handPrice = eval(salePriceInputValue - goldPrice);
+        let handPrice = eval(salePriceInputValue - goldPrice);
 
-    //result
-    itemBoldOneTag.textContent = gramToPaeValue.toFixed(2);
-    itemBoldTwoTag.textContent = goldPrice.toFixed(2);
-    itemBoldThreeTag.textContent = handPrice.toFixed(2);
+        //result
+        itemBoldOneTag.textContent = gramToPaeValue.toFixed(2);
+        itemBoldTwoTag.textContent = goldPrice.toFixed(2);
+        itemBoldThreeTag.textContent = handPrice.toFixed(2);
+    }
+
+
+
 
 
 
