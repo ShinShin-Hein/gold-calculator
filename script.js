@@ -13,7 +13,7 @@ calBtnTag.addEventListener("click", function () {
     let salePriceInputValue = salePriceInputTag.value;
     let currentPriceInputValue = currentPriceInputTag.value;
 
-    if (gramInputTagValue === "" || salePriceInputValue === "", currentPriceInputValue === "") {
+    if (gramInputTagValue === "" || salePriceInputValue === "" || currentPriceInputValue === "") {
         alert("Please enter valid numbers in all fields");
     } else {
         let gramToPaeValue = eval(gramInputTagValue / 1.0205);
