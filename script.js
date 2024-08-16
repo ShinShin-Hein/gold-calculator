@@ -30,9 +30,4 @@ calBtnTag.addEventListener("click", function () {
         itemBoldThreeTag.textContent = handPrice.toFixed(2);
     }
 
-
-
-
-
-
 })

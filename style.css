@@ -88,7 +88,6 @@ body {
     display: flex;
 }
 
-
 /* media query */
 @media(max-width: 1000px) {
     .container {
