@@ -1,4 +1,4 @@
-let grandInputTag = document.getElementById("grandInput");
+let gramInputTag = document.getElementById("gramInput");
 let salePriceInputTag = document.getElementById("salePriceInput");
 let currentPriceInputTag = document.getElementById("currentPriceInput");
 let calBtnTag = document.getElementById("calBtn");
@@ -11,7 +11,7 @@ let itemBoldThreeTag = document.getElementById("itemBoldThree");
 
 
 calBtnTag.addEventListener("click", function () {
-    let grandInputValue = grandInputTag.value;
+    let gramInputTagValue = gramInputTag.value;
     let salePriceInputValue = salePriceInputTag.value;
     let currentPriceInputValue = currentPriceInputTag.value;
 
@@ -22,7 +22,7 @@ calBtnTag.addEventListener("click", function () {
     //     alert("ok");
     // }
 
-    let gramToPaeValue = eval(grandInputValue / 1.0205);
+    let gramToPaeValue = eval(gramInputTagValue / 1.0205);
 
     let paeToKyatTharr = eval(gramToPaeValue / 16);
 
